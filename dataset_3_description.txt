@@ -1,0 +1,146 @@
+This document explains what each of the columns in clean_data_2.csv represent.
+
+'ID'
+From the original data set: 
+A number 1 - 3000
+
+'LIMIT_BAL'
+From the original data set:
+Amount of the given credit (NT dollar): it includes both the individual consumer credit and his/her family (supplementary) credit.
+
+'SEX'
+From the original data set:
+Gender (1 = male; 2 = female).
+
+'EDUCATION'
+From the original data set:
+Education (1 = graduate school; 2 = university; 3 = high school; 4 = others).
+I ADDED: the original data included 0, 5, and 6. Since the description didn't include those, I moved those to the 4 = others category.
+
+'MARRIAGE'
+From the original data set:
+Marital status (1 = married; 2 = single; 3 = others).
+I ADDED: The original data inlcuded 0.  Since the description didn't include those, I moved those to the 3 = others category
+
+'AGE'
+From the original data set:
+Age (year).
+
+'PAY_1' - 'PAY_6'
+From the original data set:
+History of past payment. We tracked the past monthly payment records (from April to September, 2005) as follows: 
+PAY_1 = the repayment status in September, 2005; PAY_2 = the repayment status in August, 2005; . . .;
+PAY_6 = the repayment status in April, 2005. 
+The measurement scale for the repayment status is: 
+-1 = pay duly; 1 = payment delay for one month; 2 = payment delay for two months; . . .; 8 = payment delay for eight months; 9 = payment delay for nine months and above.
+NOTE: the data includes -2 and 0, and most values are 0.  
+A cursory search makes me believe that 0 means paid duly and the negative numbers mean over/pre-paid, but I'm actually not sure.
+Also, note that the lower numbers are more recent payments
+
+'BILL_AMT1'-'BILL_AMT6'
+From the original data set:
+Amount of bill statement (NT dollar). 
+BILL_AMT1= amount of bill statement in September, 2005; BILL_AMT2= amount of bill statement in August, 2005; . . .; 
+BILL_AMT6= amount of bill statement in April, 2005.
+
+'PAY_AMT1' - 'PAY_AMT6'
+From the original data set:
+Amount of previous payment (NT dollar). 
+PAY_AMT1 = amount paid in September, 2005; PAY_AMT2= amount paid in August, 2005; . . .;
+PAY_AMT6= amount paid in April, 2005.
+
+'Y'
+1 if they defaulted the next month
+0 if they didn't
+
+'AGE_BY10'
+Contains a value 0-5 that corresponds to the following:
+0: ages 20-29
+1: ages 30-39
+2: ages 40-49
+3: ages 50-59
+4: ages 60-69
+5: ages 70-79
+
+'AVE_PAY'
+Gives the average of PAY_1 through PAY_6 for the individual
+
+'AGE/LIM'
+Gives the person's AGE/(logarithm of LIMIT_BAL)
+
+'AVE_BILL_AMT'
+Gives the average of BILL_AMT1 - BILL_AMT6
+
+'BILL/LIM1' - 'BILL/LIM6'
+Gives BILL_AMTi/LIMIT_BAL for i = 1,2,...,6
+
+'AVE_BILL_AMT/LIM'
+Gives the average of BILL/LIM1 - BILL/LIM6
+
+'AVE_PAY_AMT'
+Gives the average of PAY_AMT1 - PAY_AMT6
+
+'PAY_AMT/LIM1' - 'PAY_AMT/LIM6'
+Gives PAY_AMTi/LIMI_BAL for i = 1,...,6
+
+'AVE_PAY_AMT/LIM'
+Gives the average of PAY_AMT/LIM1,...,PAY_AMT/LIM6
+
+'PAY/BILL_1' - 'PAY/BILL_6'
+If a bill is paid in full (note that PAY_AMT1 is the amount used to pay off BILL_AMT2, etc), then has a value of 1.
+Otherwise, gives the proportion of the bill that was paid.
+
+'AVE_PAY/BILL'
+Gives the average of PAY/BILL1 - PAYL/BILL6
+
+'UNPAID_MONTHS'
+Gives the total number of months that the bill was not paid duly, accoding to PAY_1 - PAY_6
+
+===Target Encoding===
+'PAY_1_TE' - 'PAY_6_TE'
+Target encoded versions of PAY_1 through PAY_6, respectively.  Encoding was done on the training set using
+train, test = train_test_split(data,
+                               test_size=0.1,
+                               stratify=data['Y'],
+                               shuffle=True,
+                               random_state=123)
+
+'SEX_TE'
+Target encoded version of 'SEX'. Encoding was done on the training set using
+train, test = train_test_split(data,
+                               test_size=0.1,
+                               stratify=data['Y'],
+                               shuffle=True,
+                               random_state=123)
+
+'EDUCATION'
+Target encoded version of 'EDUCATION'. Encoding was done on the training set using
+train, test = train_test_split(data,
+                               test_size=0.1,
+                               stratify=data['Y'],
+                               shuffle=True,
+                               random_state=123)
+'MARRIAGE'
+Target encoded version of 'MARRIAGE'. Encoding was done on the training set using
+train, test = train_test_split(data,
+                               test_size=0.1,
+                               stratify=data['Y'],
+                               shuffle=True,
+                               random_state=123)
+'AGE'
+Target encoded version of 'AGE'. Encoding was done on the training set using
+train, test = train_test_split(data,
+                               test_size=0.1,
+                               stratify=data['Y'],
+                               shuffle=True,
+                               random_state=123)
+'AGE_BY10'
+Target encoded version of 'AGE_BY10'. Encoding was done on the training set using
+train, test = train_test_split(data,
+                               test_size=0.1,
+                               stratify=data['Y'],
+                               shuffle=True,
+                               random_state=123)
+
+
+

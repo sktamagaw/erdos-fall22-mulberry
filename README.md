@@ -14,6 +14,10 @@ Python Files:
   
   A file where I adjusted some of the parameters to make more sense, and added columns that were found to be useful in `Exploratory Data Analysis-SKT.ipynb`
   
+  <li> Data Cleaning 3-SKT.ipynb </li>
+  
+  A file where I added target encoded columns for the categorical features pay history, sex, education, marriage, age, and age grouped by 10's
+  
   <li> Exploratory Data Analysis-SKT.ipynb </li>
   
   Looking at the different features of the data to see which ones seemed helpful, and adding a few new features based on them
@@ -35,14 +39,18 @@ Python Files:
 
 Other files:
 <ul>
-<li>clean_data_2.csv 
+    <li>clean_data_2.csv </li>
   
   The CSV file created in `Data Cleaning 2-SKT.ipynb`
   
-  </li>
+  <li> clean_data_3.csv </li>
+  
+  The CSV file created in `Data Cleaning 3-SKT.ipynb`
 
   <li>dataset_2_description.txt </li>
   
   A description of what every column in `clean_data_2.csv` represents
+  
+  <li> dataset_3_description.txt </li>
   
 </ul>
