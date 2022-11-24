@@ -14,7 +14,7 @@ Python Files:
   
   A file where I adjusted some of the parameters to make more sense, and added columns that were found to be useful in `Exploratory Data Analysis-SKT.ipynb`
   
-  <li> Data Cleaning 3-SKT.ipynb </li>
+  <li> Data Cleaning 3-Target Encoding SKT.ipynb </li>
   
   A file where I added target encoded columns for the categorical features pay history, sex, education, marriage, age, and age grouped by 10's
   
