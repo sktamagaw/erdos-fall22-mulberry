@@ -3,10 +3,11 @@
 
 This repository contains Python code for the Erdos Data Science Bootcamp Fall 2022.
 
-
-Python Files:
 <ul>
-  <li> Data Cleaning-SKT.ipynb </li>
+    <li> Data 
+        <p> This folder contains the data we used to build our model, as well as the Jupyter notebooks we used to clean and explore the data.</p>
+        <ul>
+              <li> Data Cleaning-SKT.ipynb </li>
   
   A short file where I made the data easily usable in Pandas
   
@@ -21,6 +22,18 @@ Python Files:
   <li> Exploratory Data Analysis-SKT.ipynb </li>
   
   Looking at the different features of the data to see which ones seemed helpful, and adding a few new features based on them
+        </ul>
+    </li>
+    
+    
+    <li> Models </li>
+    
+    </ul>
+
+
+Python Files:
+<ul>
+
   
   <li> kNN and average Models-SKT.ipynb </li>
   
