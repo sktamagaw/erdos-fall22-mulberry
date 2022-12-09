@@ -54,7 +54,7 @@ This repository contains Python code for the Erdos Data Science Bootcamp Fall 20
     
         - Decision Trees and Random Forests SKT.ipynb
         
-         Creating a random forest model.  We see that max_depth levels off after about 6, and n_estimators doesn't seem to vary the results much, so we might as well use 2.
+             Creating a random forest model.  We see that max_depth levels off after about 6, and n_estimators doesn't seem to vary the results much, so we might as well use 2.
       - kNN and average Models-SKT.ipynb
         
           Creating a k Nearest Neighbors model, as well as models where only one feature was taken and the prediction was determined by which side of "average" of that feature the observation was on.  The models in this notebook generally have bad accuracy or recall.
