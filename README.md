@@ -50,6 +50,10 @@ This repository contains Python code for the Erdos Data Science Bootcamp Fall 20
     - Logistic Regression SKT.ipynb 
     
         Creating a logistic regression model using all of the features, as well as making one for each feature individually.  On the individual features, we notice that only the most recent payment history, average pay history, and total number of unpaid months were the only models that didn't just assume no one defaulted.  So, we also created a model that used only these three features, and that performed better.  Varying C didn't matter much.
+        
+    - Neural Network Models.ipynb
+    
+        Creating Neural Network Models.  A summary of these can be found [here](https://docs.google.com/document/d/1RBTwPmg-FhYvKPpLcc3vhlfQJsN615UCrALc_UfR7oo/edit)
     - Support Vector Classifier.ipynb
     
         Creating a SVC model using all of the features, where the classification data was target encoded.  We found that among polynomials with degree up to 15, linear, rbf, and sigmoid, the sigmoid kernel performed the worst, and the others performed about that same.  We also found that only using the features used on the logistic regression model also performed slightly better.
