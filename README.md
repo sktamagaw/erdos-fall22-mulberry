@@ -2,6 +2,8 @@
 
 # Code for Erdos Data Science Bootcamp Fall 2022 
 
+#### Michelle Lobb and Sherilyn Tamagawa
+
 This repository contains Python code for the Erdos Data Science Bootcamp Fall 2022.
 
 - Data
@@ -43,7 +45,7 @@ This repository contains Python code for the Erdos Data Science Bootcamp Fall 20
         
     - Neural Network Models.ipynb
     
-        Creating Neural Network Models.  A summary of these can be found [here](https://docs.google.com/document/d/1RBTwPmg-FhYvKPpLcc3vhlfQJsN615UCrALc_UfR7oo/edit)        
+        Creating Neural Network Models.  This notebook was created by my team member [Michelle Lobb](https://github.com/michellelobb). A summary of these can be found [here](https://docs.google.com/document/d/1RBTwPmg-FhYvKPpLcc3vhlfQJsN615UCrALc_UfR7oo/edit)        
     - Other models
     
         A folder that contains our initial models
